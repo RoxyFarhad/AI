@@ -1,0 +1,92 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\
+Code Write-Up: \
+\
+I stuck heavily with the format of the problem, except I broke the Manhattan Heuristic Function into two, with the mhs function calculating the return values for the specific values, and the MH function would add all the return values, excluding 0. \
+\
+The cost of 0 was not adde to the heuristic as in real life the tis just an empty space. \
+\
+\
+\
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs22 \cf2 \CocoaLigature0 1 4 2\
+0 5 8\
+3 6 7\
+\
+====BFS====\
+Path to goal: ['Up', 'Left', 'Left', 'Down', 'Right', 'Down', 'Right']\
+Cost of path: 7\
+States expanded: 152\
+Max frontier size: 90\
+Total time: 0.003s\
+\
+====DFS====\
+Cost of path: 63987\
+States expanded: 108309\
+Max frontier size: 42967\
+Total time: 3.065s\
+\
+====A* (Misplaced Tiles Heuristic)====\
+Path to goal: ['Up', 'Left', 'Left', 'Down', 'Right', 'Down', 'Right']\
+Cost of path: 7\
+States expanded: 7\
+Max frontier size: 8\
+Total time: 0.000s\
+\
+====A* (Total Manhattan Distance Heuristic)====\
+Path to goal: ['Up', 'Left', 'Left', 'Down', 'Right', 'Down', 'Right']\
+Cost of path: 7\
+States expanded: 7\
+Max frontier size: 8\
+Total time: 0.000s\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \CocoaLigature1 \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs22 \cf2 \CocoaLigature0 7 2 4\
+5 0 6\
+8 3 1\
+\
+====BFS====\
+Path to goal: ['Right', 'Down', 'Left', 'Up', 'Left', 'Up', 'Right', 'Right', 'Down', 'Left', 'Left', 'Up', 'Right', 'Right', 'Down', 'Left', 'Left', 'Down', 'Right', 'Right', 'Up', 'Left', 'Left', 'Down', 'Right', 'Right']\
+Cost of path: 26\
+States expanded: 170921\
+Max frontier size: 24983\
+Total time: 4.375s\
+\
+====DFS====\
+Cost of path: 62140\
+States expanded: 114207\
+Max frontier size: 42912\
+Total time: 3.040s\
+\
+====A* (Misplaced Tiles Heuristic)====\
+Path to goal: ['Right', 'Down', 'Left', 'Up', 'Left', 'Up', 'Right', 'Right', 'Down', 'Left', 'Left', 'Up', 'Right', 'Right', 'Down', 'Left', 'Left', 'Down', 'Right', 'Right', 'Up', 'Left', 'Left', 'Down', 'Right', 'Right']\
+Cost of path: 26\
+States expanded: 32643\
+Max frontier size: 13927\
+Total time: 0.829s\
+\
+====A* (Total Manhattan Distance Heuristic)====\
+Path to goal: ['Right', 'Down', 'Left', 'Up', 'Left', 'Up', 'Right', 'Right', 'Down', 'Left', 'Left', 'Up', 'Right', 'Right', 'Down', 'Left', 'Left', 'Down', 'Right', 'Right', 'Up', 'Left', 'Left', 'Down', 'Right', 'Right']\
+Cost of path: 26\
+States expanded: 1745\
+Max frontier size: 971\
+Total time: 0.075s\
+}
